@@ -17,11 +17,11 @@ export function check(promise, improved){
 
 
 // An example using the check() above
-const [error, result] = await check(someAsyncData());
+const [error, result] = await check(asyncFunc());
 if(error){
   // log something and return ?
 }
-const [error2, result2] = await check(someAsyncData2());
+const [error2, result2] = await check(secondAsyncFunc());
 if(error2){
   // do something else
 } else {
